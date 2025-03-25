@@ -40,7 +40,7 @@
 
 param (
     [string]$ip = "10.0.10.29",
-    [string]$excelPath = "$PSScriptRoot\stromverbrauch.xlsx"
+    [string]$excelPath = "$PSScriptRoot\stromverbrauch.xlsx",
 	[switch]$help
 )
 
