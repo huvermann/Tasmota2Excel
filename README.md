@@ -84,3 +84,9 @@ Beim Ausführen der Skripte kann es zu Fehlermeldungen bezüglich der Ausführun
    Bestätige die Eingabeaufforderung, falls Du dazu aufgefordert wirst.
 
 Weitere Informationen zur ExecutionPolicy findest Du in der [Microsoft-Dokumentation](https://learn.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy).
+
+**Zurücksetzen der ExecutionPolicy**
+Zum zurücksetzen der Richtlinie:
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Undefined
+```
