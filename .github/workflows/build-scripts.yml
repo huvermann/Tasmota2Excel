@@ -10,14 +10,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Create zip artifact
         run: |
           mkdir output
           zip -r output/scripts.zip powershell -i "*.ps2"
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: scripts-zip
           path: output/scripts.zip
