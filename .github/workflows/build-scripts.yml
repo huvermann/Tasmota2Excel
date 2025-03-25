@@ -12,14 +12,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Create artifact
+      - name: Prepare output directory
         run: |
           mkdir output
-          #zip -r output/scripts.zip powershell README.md
+          cp -r powershell/* output/
           cp README.md output/
-          cp -r powershell output/
 
       - uses: actions/upload-artifact@v4
         with:
           name: scripts-zip
-          path: output/scripts.zip
+          path: output/**
