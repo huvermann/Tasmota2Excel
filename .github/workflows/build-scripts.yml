@@ -15,7 +15,7 @@ jobs:
       - name: Create zip artifact
         run: |
           mkdir output
-          zip -r output/scripts.zip powershell -i "*.ps2"
+          zip -r output/scripts.zip powershell README.md
 
       - uses: actions/upload-artifact@v4
         with:
