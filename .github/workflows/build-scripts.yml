@@ -1,0 +1,23 @@
+name: Build Scripts Zip
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Create zip artifact
+        run: |
+          mkdir output
+          zip -r output/scripts.zip powershell -i "*.ps2"
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: scripts-zip
+          path: output/scripts.zip
