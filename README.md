@@ -1,6 +1,3 @@
-Hier ein Vorschlag für Deine README.md, der beide Skripte, ihre Parameter und eine Anleitung zur Anpassung der ExecutionPolicy beschreibt:
-
----
 
 # Tasmota2Excel
 
@@ -87,9 +84,3 @@ Beim Ausführen der Skripte kann es zu Fehlermeldungen bezüglich der Ausführun
    Bestätige die Eingabeaufforderung, falls Du dazu aufgefordert wirst.
 
 Weitere Informationen zur ExecutionPolicy findest Du in der [Microsoft-Dokumentation](https://learn.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy).
-
----
-
-Dieses Repository bietet eine einfache Möglichkeit, Verbrauchsdaten von Tasmota-Geräten zu erfassen und in verschiedenen Formaten zu speichern. Für Fragen, Anregungen oder Verbesserungsvorschläge erstelle bitte ein Issue oder reiche einen Pull Request ein.
-
-Viel Erfolg und Spaß beim Ausprobieren!
